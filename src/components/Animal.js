@@ -97,19 +97,19 @@ class Animal extends Component {
 
     render() {
         return (
-            <div style={{display: 'flex', flexWrap: 'wrap', paddingLeft: '10px', paddingTop: '20px'}}>
+            <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', paddingLeft: '10px', paddingTop: '20px', width: '1310px', height: '100%', backgroundColor: 'red'}}>
                 {this.state.animals.map((animal, idx) => {
                     return (
-                        <div key={animal.animalId} class='ui card'>
-                            <div class='image'>
+                        <div key={animal.animalId} className='ui card'>
+                            <div className='image'>
                                 <img style={{height: '250px'}} src={animal.image} alt='...' />
                             </div>
-                            <div class='content'>
-                                <a class='header'>{animal.name}</a>
-                                <div class='meta'>
+                            <div className='content'>
+                                <a className='header'>{animal.name}</a>
+                                <div className='meta'>
                                     <span class='date'>{animal.type}</span>
                                 </div>
-                                <div class='description'>
+                                <div className='description'>
                                     {animal.description}
                                 </div>
                             </div>
