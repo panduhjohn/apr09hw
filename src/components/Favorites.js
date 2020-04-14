@@ -23,7 +23,7 @@ const Favorites = (props) => {
                                         }}
                                         alt='...'
                                     />
-                                    {item.name}
+                                    <p>{item.name}</p>
                                 </div>
                             </div>
                         );
@@ -48,7 +48,7 @@ const Favorites = (props) => {
                                         }}
                                         alt='...'
                                     />
-                                    {item.name}
+                                    <p>{item.name}</p>
                                 </div>
                             </div>
                         );
